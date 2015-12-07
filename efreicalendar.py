@@ -18,7 +18,7 @@ class CalendarHandler(webapp2.RequestHandler):
 
 		defaultUrl = "http://extranet.groupe-efrei.fr/Student/OpenCalendar?key=";
 
-		if not key or key.length == 0:
+		if not key:
 			self.error(304)
 
 		calendarUrl = defaultUrl + key + "&langue=FR"
