@@ -7,3 +7,12 @@ threadsafe: true
 handlers:
 - url: /.*
   script: efreicalendar.app
+
+skip_files:
+- ^(.*/)?#.*#$
+- ^(.*/)?.*~$
+- ^(.*/)?.*\.py[co]$
+- ^(.*/)?.*/RCS/.*$
+- ^(.*/)?\..*$
+- ^(\..*)$
+- ^(.*/)?.*\.git$
